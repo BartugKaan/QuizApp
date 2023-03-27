@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,7 +56,6 @@
                                     <constraint firstAttribute="height" constant="55" id="D3e-Vm-Sdg"/>
                                     <constraint firstAttribute="width" constant="361" id="Djc-ey-apO"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer1"/>
                             </button>
@@ -65,7 +65,7 @@
                                     <constraint firstAttribute="width" constant="361" id="BMz-hJ-GbU"/>
                                     <constraint firstAttribute="height" constant="55" id="LfQ-1a-Elf"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer2"/>
                             </button>
@@ -75,10 +75,15 @@
                                     <constraint firstAttribute="width" constant="361" id="5hj-0M-c7i"/>
                                     <constraint firstAttribute="height" constant="55" id="7Nb-d4-Cas"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer3"/>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YQY-Pd-UAe">
+                                <rect key="frame" x="16" y="796" width="361" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="NL8-BQ-02l"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,13 +103,16 @@
                             <constraint firstItem="zd5-Wh-eMt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xf7-8i-Cfm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BKF-MP-mmV" secondAttribute="trailing" constant="16" id="YfG-y3-6jd"/>
                             <constraint firstItem="PqN-Kc-wL5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f9z-ag-Drw"/>
+                            <constraint firstItem="YQY-Pd-UAe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fNg-7i-UwN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eJd-1x-cwM" secondAttribute="trailing" constant="16" id="hAY-iX-hqQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YQY-Pd-UAe" secondAttribute="trailing" constant="16" id="jBm-8y-LE2"/>
                             <constraint firstItem="BKF-MP-mmV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ltG-pE-Sia"/>
                             <constraint firstItem="FIj-jk-iez" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lwM-Y0-KJv"/>
                             <constraint firstItem="5aO-2r-B2S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mAI-bl-ve6"/>
                             <constraint firstItem="FIj-jk-iez" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="p1q-fP-HU9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5aO-2r-B2S" secondAttribute="trailing" constant="16" id="rb3-rF-LhY"/>
                             <constraint firstItem="PqN-Kc-wL5" firstAttribute="top" secondItem="5aO-2r-B2S" secondAttribute="bottom" constant="8" id="xIA-NG-ohu"/>
+                            <constraint firstItem="YQY-Pd-UAe" firstAttribute="top" secondItem="eJd-1x-cwM" secondAttribute="bottom" constant="28" id="xQf-lG-PVF"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -115,11 +123,11 @@
     </scenes>
     <resources>
         <image name="background" width="1024" height="1024"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
