@@ -58,6 +58,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer1"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uvp-QM-NSW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-MP-mmV">
                                 <rect key="frame" x="16" y="650" width="361" height="55"/>
@@ -68,6 +71,9 @@
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer2"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bed-Xg-mCq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJd-1x-cwM">
                                 <rect key="frame" x="16" y="713" width="361" height="55"/>
@@ -77,6 +83,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer3"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BcL-id-QCp"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YQY-Pd-UAe">
                                 <rect key="frame" x="16" y="796" width="361" height="16"/>
@@ -115,6 +124,15 @@
                             <constraint firstItem="YQY-Pd-UAe" firstAttribute="top" secondItem="eJd-1x-cwM" secondAttribute="bottom" constant="28" id="xQf-lG-PVF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="BKF-MP-mmV" id="3lT-fy-ZXY"/>
+                        <outlet property="answer2Button" destination="BKF-MP-mmV" id="3kJ-Uv-uIn"/>
+                        <outlet property="answer3Button" destination="eJd-1x-cwM" id="mU8-4q-KIt"/>
+                        <outlet property="highscoreLabel" destination="PqN-Kc-wL5" id="ybO-x4-njl"/>
+                        <outlet property="progresView" destination="YQY-Pd-UAe" id="JJZ-24-F3I"/>
+                        <outlet property="questionLabel" destination="cSo-QG-NYg" id="vj4-m9-xM1"/>
+                        <outlet property="scoreLabel" destination="5aO-2r-B2S" id="QOA-TM-qUE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
