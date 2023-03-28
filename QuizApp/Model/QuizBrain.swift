@@ -46,7 +46,7 @@ struct QuizBrain{
         }
         else{
             questionNumber = 0
-        }
+            score = 0        }
     }
     
     mutating func checkAnswer(_ userAnswer : String) -> Bool{
@@ -59,4 +59,10 @@ struct QuizBrain{
         }
     }
     
+    mutating func updateHighscore() -> Int{
+        if score >= highScore{
+            highScore = score
+        }
+        return highScore
+    }
 }

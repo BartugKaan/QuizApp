@@ -13,6 +13,7 @@
 		81092B2A29D1F5D900B726F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81092B2829D1F5D900B726F7 /* Main.storyboard */; };
 		81092B2C29D1F5DA00B726F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81092B2B29D1F5DA00B726F7 /* Assets.xcassets */; };
 		81092B2F29D1F5DA00B726F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81092B2D29D1F5DA00B726F7 /* LaunchScreen.storyboard */; };
+		8168CBAA29D338AD00266B06 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8168CBA929D338AD00266B06 /* Readme.md */; };
 		81E4319C29D225940071A861 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4319B29D225940071A861 /* Question.swift */; };
 		81E4319E29D2264D0071A861 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4319D29D2264D0071A861 /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		81092B2B29D1F5DA00B726F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81092B2E29D1F5DA00B726F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81092B3029D1F5DA00B726F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8168CBA929D338AD00266B06 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		81E4319B29D225940071A861 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		81E4319D29D2264D0071A861 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +46,7 @@
 		81092B1629D1F5D900B726F7 = {
 			isa = PBXGroup;
 			children = (
+				8168CBA929D338AD00266B06 /* Readme.md */,
 				81092B2129D1F5D900B726F7 /* QuizApp */,
 				81092B2029D1F5D900B726F7 /* Products */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				81092B2F29D1F5DA00B726F7 /* LaunchScreen.storyboard in Resources */,
 				81092B2C29D1F5DA00B726F7 /* Assets.xcassets in Resources */,
+				8168CBAA29D338AD00266B06 /* Readme.md in Resources */,
 				81092B2A29D1F5D900B726F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

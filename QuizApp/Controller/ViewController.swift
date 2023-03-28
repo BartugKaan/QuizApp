@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         progresView.progress = quizBrain.getProgress()
         scoreLabel.text = "Score : \(quizBrain.getScore())"
         scoreLabel.backgroundColor = UIColor.clear
+        highscoreLabel.text = "Highscore : \(quizBrain.updateHighscore())"
     }
 }
 
