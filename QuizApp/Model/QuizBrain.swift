@@ -23,4 +23,40 @@ struct QuizBrain{
     var questionNumber = 0
     var score = 0
     var highScore = 0
+    
+    func retunOptions() -> [String]{
+        return quiz[questionNumber].options
+    }
+    
+    func returnText() -> String{
+        return quiz[questionNumber].text
+    }
+    
+    func getProgress() -> Float{
+        return Float(questionNumber + 1) / Float(quiz.count)
+    }
+    
+    func getScore() -> Int{
+        return score
+    }
+    
+    mutating func nextQuestion(){
+        if questionNumber + 1 < quiz.count{
+            questionNumber += 1
+        }
+        else{
+            questionNumber = 0
+        }
+    }
+    
+    mutating func checkAnswer(_ userAnswer : String) -> Bool{
+        if userAnswer == quiz[questionNumber].answer{
+            score += 1
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
 }

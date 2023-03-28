@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var quizBrain = QuizBrain()
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var highscoreLabel: UILabel!
