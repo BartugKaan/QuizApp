@@ -20,7 +20,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FIj-jk-iez">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSo-QG-NYg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSo-QG-NYg">
                                 <rect key="frame" x="16" y="193" width="361" height="366"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="366" id="Xza-gr-EMr"/>
@@ -52,10 +52,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd5-Wh-eMt">
                                 <rect key="frame" x="16" y="587" width="361" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="D3e-Vm-Sdg"/>
                                     <constraint firstAttribute="width" constant="361" id="Djc-ey-apO"/>
                                 </constraints>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer1"/>
                                 <connections>
@@ -81,6 +83,7 @@
                                     <constraint firstAttribute="width" constant="361" id="5hj-0M-c7i"/>
                                     <constraint firstAttribute="height" constant="55" id="7Nb-d4-Cas"/>
                                 </constraints>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer3"/>
                                 <connections>
@@ -125,7 +128,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="answer1Button" destination="BKF-MP-mmV" id="3lT-fy-ZXY"/>
+                        <outlet property="answer1Button" destination="zd5-Wh-eMt" id="HXl-H3-q0A"/>
                         <outlet property="answer2Button" destination="BKF-MP-mmV" id="3kJ-Uv-uIn"/>
                         <outlet property="answer3Button" destination="eJd-1x-cwM" id="mU8-4q-KIt"/>
                         <outlet property="highscoreLabel" destination="PqN-Kc-wL5" id="ybO-x4-njl"/>

@@ -24,8 +24,8 @@ struct QuizBrain{
     var score = 0
     var highScore = 0
     
-    func retunOptions() -> [String]{
-        return quiz[questionNumber].options
+    func retunOptions(buttonIndex : Int) -> String{
+        return quiz[questionNumber].options[buttonIndex]
     }
     
     func returnText() -> String{

@@ -23,15 +23,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var progresView: UIProgressView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateUI()
     }
     
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
+        let userAnswer = sender.currentTitle!
+        let userGotItRight = quizBrain.checkAnswer(userAnswer)
+        if userGotItRight{
+            scoreLabel.backgroundColor = UIColor.green
+        }
+        else{
+            scoreLabel.backgroundColor = UIColor.red
+        }
+        quizBrain.nextQuestion()
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
-
+    @objc func updateUI(){
+        questionLabel.text = quizBrain.returnText()
+        answer1Button.setTitle(quizBrain.retunOptions(buttonIndex: 0), for: .normal)
+        answer2Button.setTitle(quizBrain.retunOptions(buttonIndex: 1), for: .normal)
+        answer3Button.setTitle(quizBrain.retunOptions(buttonIndex: 2), for: .normal)
+        progresView.progress = quizBrain.getProgress()
+        scoreLabel.text = "Score : \(quizBrain.getScore())"
+        scoreLabel.backgroundColor = UIColor.clear
+    }
 }
 
